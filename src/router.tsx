@@ -13,16 +13,17 @@ import {JSX} from "react";
 import {AdminDashboard} from "./components/AdminDashboard/AdminDashboard.tsx";
 
 export const USER_PAGES = {
-    HOME: "/cinemaHall/",
-    SEANCE: "/cinemaHall/seance",
-    PAYMENT: "/cinemaHall/payment",
-    TICKET: "/cinemaHall/ticket",
+    HOME: "/",
+    SEANCE: "/seance",
+    PAYMENT: "/payment",
+    TICKET: "/ticket",
+    ADMIN: "/admin/login",
 }
 
 export const ADMIN_PAGES = {
-    LOGIN: "/cinemaHall/admin/login",
-    LOGOUT: "/cinemaHall/admin/logout",
-    MAIN: "/cinemaHall/admin/dashboard"
+    LOGIN: "/admin/login",
+    LOGOUT: "/admin/logout",
+    MAIN: "/admin/dashboard"
 }
 
 const ProtectedRoute = ({children}: { children: JSX.Element }) => {
