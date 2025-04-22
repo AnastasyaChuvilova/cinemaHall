@@ -58,7 +58,6 @@ export class BackendApi {
             throw new Error(data.error);
         }
 
-        console.log(data);
         return data.result;
     }
 

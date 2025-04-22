@@ -43,7 +43,7 @@
     display: block;
     width: 12px;
     height: 12px;
-    background: url("../../hall_remove_button.png") no-repeat center center;
+    background: url("../../cinemaHall/hall_remove_button.png") no-repeat center center;
     background-size: contain;
     position: absolute;
     top: 50%;
