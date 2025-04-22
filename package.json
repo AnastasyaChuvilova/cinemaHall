@@ -6,15 +6,20 @@
   "scripts": {
     "dev": "vite",
     "build": "tsc && vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "predeploy": "rm -rf dist && npm run build",
+    "deploy": "gh-pages -d dist -b gh-pages"
   },
+  "homepage": "https://anastasyachuvilova.github.io/cinemaHall",
   "devDependencies": {
     "@types/react": "^19.0.8",
     "@types/react-dom": "^19.1.1",
+    "gh-pages": "^6.3.0",
     "typescript": "~5.7.2",
     "vite": "^6.2.0"
   },
   "dependencies": {
+    "@vitejs/plugin-react": "^4.4.1",
     "react": "^19.0.0",
     "react-dom": "^19.1.0",
     "react-router-dom": "^7.5.0"

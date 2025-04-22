@@ -1,4 +1,4 @@
-import {createBrowserRouter, Navigate, redirect} from "react-router-dom";
+import {createHashRouter , Navigate, redirect} from "react-router-dom";
 import {UserHome} from "./components/Home/UserHome.tsx";
 import {App} from "./App.tsx";
 import {Seance} from "./components/Booking/Seance.tsx";
@@ -32,7 +32,7 @@ const ProtectedRoute = ({children}: { children: JSX.Element }) => {
 };
 
 
-export const router = createBrowserRouter([
+export const router = createHashRouter ([
     {
         path: USER_PAGES.HOME,
         element: <App/>,

@@ -59,7 +59,7 @@
     display: flex;
     flex-direction: column;
     padding-top: 30px;
-    background: url("../../screen.png") no-repeat top;
+    background: url("/screen.png") no-repeat top;
     background-size: 284px 15px;
     gap: 4px;
 }
