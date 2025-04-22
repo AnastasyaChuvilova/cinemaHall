@@ -1,0 +1,52 @@
+.create_hall_button {
+    padding-top: 22px;
+}
+
+.available_halls_title {
+    position: relative;
+    top: -1px;
+}
+
+.available_halls_list {
+    position: relative;
+    top: 3px;
+    left: 6px;
+}
+
+.hall_name {
+    display: flex;
+    flex-direction: row;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-top: 10px;
+    margin-left: 6px;
+}
+
+.hall_remove_button {
+    width: 20px;
+    height: 20px;
+    border-radius: 3px;
+    border: none;
+    background-color: #FFFFFF;
+    cursor: pointer;
+    box-shadow: 0 3px 3px 0 #0000003D;
+    margin-left: 3px;
+    position: relative;
+}
+
+.hall_remove_button::after {
+    content: "";
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: url("../../hall_remove_button.png") no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

@@ -1,0 +1,108 @@
+.movie_section {
+    background-color: #F1EBE6F2;
+    max-width: 990px;
+    min-width: 320px;
+    width: 100%;
+    margin: 20px auto;
+    font-size: 12px;
+    border-radius: 2px;
+    display: flex;
+    flex-direction: column;
+    padding: 15px 15px 0 15px;
+    box-sizing: border-box;
+}
+
+.movie_info {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+}
+
+.movie_poster {
+    flex-shrink: 0;
+    width: 125px;
+    height: 175px;
+    position: relative;
+}
+
+.movie_poster img {
+    width: 125px;
+    height: 175px;
+    object-fit: cover;
+    display: block;
+}
+
+.after {
+    position: absolute;
+    right: -6px;
+    top: 0;
+    left: 126px;
+    width: 6px;
+    height: 14px;
+    background: rgba(57, 57, 57, 1);
+}
+
+.movie_description {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.description_header {
+    font-weight: 700;
+    font-size: 16px;
+}
+
+.movie_synopsis {
+    font-weight: 400;
+    font-size: 14px;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.movie_data {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.movie_seances {
+    font-weight: 700;
+    font-size: 16px;
+    flex-grow: 1;
+    position: relative;
+
+}
+
+.seances_list {
+    display: flex;
+    flex-direction: row;
+    margin-top: 7px;
+    flex-wrap: wrap;
+    gap: 7px;
+    margin-bottom: 20px;
+}
+
+.seances_item {
+    background: rgba(255, 255, 255, 1);
+    box-shadow: 0 2px 2px 0 #0000003D;
+    border-radius: 2px;
+    display: flex;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+    font-weight: 400;
+    font-size: 15px;
+    letter-spacing: 0;
+    padding: 8px;
+    font-family: "Roboto", sans-serif;
+}
+
+.seances_item_text {
+    height: 33px;
+}
+
+.seances_item:hover {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,134 @@
+.cinema_hall_main {
+    max-width: 930px;
+    height: 361px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #171D24;
+    padding-top: 15px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+
+.cinema_hall_legend {
+    height: 80px;
+    display: flex;
+    justify-content: center;
+}
+
+.cinema_hall_col {
+    width: 184px;
+    height: 50px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 10px;
+}
+
+.cinema_hall_col.col1 {
+    width: 184px;
+    height: 50px;
+}
+
+.cinema_hall_col.col2 {
+    width: 85px;
+    height: 50px;
+}
+
+.cinema_hall_legend_price {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.cinema_hall_legend_chair {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #525252;
+}
+
+.cinema_hall_screen {
+    width: 284px;
+    height: 15px;
+}
+
+.cinema_hall_seats_main {
+    width: 284px;
+    height: 266px;
+    display: flex;
+    flex-direction: column;
+    padding-top: 30px;
+    background: url("../../screen.png") no-repeat top;
+    background-size: 284px 15px;
+    gap: 4px;
+}
+
+.cinema_hall_seat_row {
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+}
+
+.cinema_hall_seat {
+    width: 20px;
+    height: 20px;
+    border-radius: 4px;
+    border: 1px solid #525252;
+    background: #FFFFFF;
+    cursor: pointer;
+    flex-shrink: 0;
+    transition: all 0.2s ease;
+    padding: 0;
+}
+
+.cinema_hall_seat:hover:not(.booked) {
+    background: #e3f2fd;
+    transform: scale(1.1);
+}
+
+.cinema_hall_seat.selected {
+    background: #25c4ce !important;
+    border-color: #fff !important;
+    transform: scale(1.05);
+}
+
+.cinema_hall_seat.booked {
+    background: #171D24;
+    cursor: not-allowed;
+    opacity: 0.7;
+}
+
+.cinema_hall_seat_gap {
+    width: 20px;
+    height: 20px;
+    flex-shrink: 0;
+    visibility: hidden;
+}
+
+.cinema_hall_seat.standart {
+    background: #ffffff;
+}
+
+.cinema_hall_seat.standart:not(.selected):not(.booked):hover {
+    background: #e3f2fd;
+}
+
+.cinema_hall_seat.vip {
+    background: #F9953A;
+}
+
+.cinema_hall_seat.vip:not(.selected):not(.booked) {
+    background: #f9953a;
+}
+
+.cinema_hall_seat.taken {
+    background: #171D24;
+    cursor: not-allowed;
+}
+
+.cinema_hall_seat.disabled {
+    background: #666;
+    cursor: not-allowed;
+    opacity: 0.5;
+}

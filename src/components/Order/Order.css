@@ -1,0 +1,165 @@
+.order_main {
+    max-width: 990px;
+    min-width: 320px;
+    width: 100%;
+    height: 406px;
+    position: relative;
+}
+
+.order_header_frame {
+    margin-top: 3px;
+    height: 25px;
+    background-color: #F1EBE6F2;
+    z-index: 2;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    text-transform: uppercase;
+    padding: 25px 15px;
+    color: #C76F00;
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: 403px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: url("../../border.png") repeat-x;
+        background-size: 10px 3px;
+        z-index: 1;
+    }
+
+    &::before {
+        content: '';
+        position: absolute;
+        bottom: 325px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: url("../../border.png") repeat-x;
+        background-size: 10px 3px;
+        transform: scaleY(-1);
+        z-index: 1;
+    }
+}
+
+.order_body_frame {
+    width: 100%;
+    height: 322px;
+    background-color: #F1EBE6F2;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 81px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: url("../../border.png") repeat-x;
+        background-size: 10px 3px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -3px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: url("../../border.png") repeat-x;
+        background-size: 10px 3px;
+        transform: scaleY(-1);
+    }
+}
+
+.order_payment_info {
+    height: 285px;
+    padding: 20px 15px;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.order_payment_info_item {
+    margin-bottom: 15px;
+}
+
+.order_ticket_hint {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    white-space: normal;
+    word-wrap: break-word;
+}
+
+.ticket_body_frame {
+    height: 456px;
+    background-color: #F1EBE6F2;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 81px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: url("../../border.png") repeat-x;
+        background-size: 10px 3px;
+    }
+
+    &::after {
+        content: '';
+        position: absolute;
+        bottom: -137px;
+        left: 0;
+        width: 100%;
+        height: 3px;
+        background: url("../../border.png") repeat-x;
+        background-size: 10px 3px;
+        transform: scaleY(-1);
+    }
+}
+
+.order_ticket_info {
+    padding: 20px 15px;
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    box-sizing: border-box;
+}
+
+.qr_code_wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.qr_code {
+    width: 200px;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.qr_code svg,
+.qr_code canvas {
+    width: 100% !important;
+    height: 100% !important;
+}
+
+.qr_code img {
+    max-width: 100%;
+    height: auto;
+}

@@ -1,0 +1,38 @@
+.booking_main {
+    max-width: 990px;
+    min-width: 320px;
+    width: 100%;
+    height: 573px;
+    background: #F1EBE6F2;
+    border-radius: 2px;
+}
+
+.booking_header {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    width: 100%;
+    height: 67px;
+    gap: 10px;
+}
+
+.booking_info_hall {
+    font-weight: 700;
+    font-size: 16px;
+    margin: 10px 0;
+}
+
+.booking_button {
+    width: 232px;
+    height: 40px;
+    background: #16A6AF;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 3px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    display: block;
+    margin: 30px auto 0;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.12), 0 3px 3px 0 rgba(0, 0, 0, 0.24);
+}

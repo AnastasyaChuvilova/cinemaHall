@@ -1,0 +1,64 @@
+.price_config_main{
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.price_config_label{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0;
+    vertical-align: middle;
+}
+
+.pcm_set_price_main {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.pcm_set_price {
+    display: flex;
+    flex-direction: column;
+}
+
+.pcm_set_price_row{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+    gap: 3px;
+    color: #757575;
+}
+
+.pcm_set_price_input {
+    width: 100px;
+    height: 36px;
+    outline: none;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    border: 1px solid #B7B7B7;
+    cursor: pointer;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    padding-left: 10px;
+    color: black;
+}
+
+.pcm_set_price_input::-webkit-inner-spin-button,
+.pcm_set_price_input::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.pcm_legend_description_text{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0;
+    vertical-align: middle;
+}

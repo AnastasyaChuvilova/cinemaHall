@@ -1,0 +1,110 @@
+.hall_create_header {
+    display: flex;
+    flex-direction: row;
+    width: 960px;
+    height: 57px;
+    box-sizing: border-box;
+    padding-top: 17px;
+    padding-left: 42px;
+    padding-bottom: 15px;
+    background: #63536C;
+    color: #FFFFFF;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 25px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.hall_create_body {
+    height: 203px;
+    width: 960px;
+    background: #EAE9EBF2;
+    display: flex;
+    flex-direction: column;
+    padding-left: 105px;
+    padding-right: 105px;
+    box-sizing: border-box;
+}
+
+.hall_create_buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top: 43px;
+    margin-left: 20px;
+}
+
+.hall_create_button {
+    width: 194px;
+    height: 40px;
+    border: none;
+    color: #FFFFFF;
+    border-radius: 3px;
+    background: #16A6AF;
+    box-shadow: 0 3px 3px 0 #0000003D;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-left: 181px;
+    margin-right: 15px;
+
+}
+
+.hall_create_close {
+    width: 139px;
+    height: 40px;
+    border: none;
+    color: #63536C;
+    border-radius: 3px;
+    background: #FFFFFF;
+    box-shadow: 0 3px 3px 0 #0000003D;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.hall_create_input_label {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 14px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    color: #848484;
+    margin-top: 34px;
+}
+.hall_create_input_form{
+    padding-bottom: 30px;
+}
+
+.hall_create_input_body {
+    margin-top: 2px;
+    width: 743px;
+    height: 31px;
+    border: 1px solid #B7B7B7;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 100%;
+    letter-spacing: 0;
+    vertical-align: middle;
+    outline: none;
+    color: #757575;
+    padding-left: 8px;
+}
+
+.hall_create_close_cross {
+    width: 22px;
+    height: 22px;
+    margin-left: 643px;
+    margin-top: 2px;
+    background: url("../../cross.png") no-repeat;
+    background-size: 22px 22px;
+}

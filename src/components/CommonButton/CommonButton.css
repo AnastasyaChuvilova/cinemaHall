@@ -1,0 +1,32 @@
+.common_button {
+    border-radius: 3px;
+    border: none;
+    box-shadow: 0 3px 3px 0 #0000003D;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    white-space: nowrap;
+    padding: 11px 30px 11px 30px;
+    box-sizing: border-box;
+    font-family: var(--main-font), sans-serif
+}
+
+.common_button.button--save {
+    height: 40px;
+    background: #16A6AF;
+    color: #FFFFFF;
+}
+
+.common_button.button--cancel {
+    height: 40px;
+    background: #FFFFFF;
+    color: #63536C;
+}
+
+.button--pressed {
+    box-shadow: 0 0 3px 0 #0000001F;
+}

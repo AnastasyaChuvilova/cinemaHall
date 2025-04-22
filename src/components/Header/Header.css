@@ -1,0 +1,39 @@
+.user_header {
+    display: flex;
+    flex-direction: row;
+    max-width: 990px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 14px;
+    box-sizing: border-box;
+}
+
+.user_header_title {
+    width: 215px;
+    font-size: 34px;
+    font-weight: 900;
+    color: #FFFFFF;
+    line-height: 39px;
+    cursor: pointer;
+}
+
+.sing_in_button{
+    width: 71px;
+    height: 40px;
+    padding: 12px;
+    border-radius: 3px;
+    border: none;
+    background: #16A6AF;
+    box-shadow: 0 3px 3px 0 #0000003D;
+    color: #FFFFFF;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 0;
+    font-family: "Roboto", sans-serif;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    margin-left: auto;
+    cursor:pointer;
+}

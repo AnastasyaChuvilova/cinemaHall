@@ -1,0 +1,24 @@
+.add_film_buttons {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+
+}
+
+.add_film_big_input_body {
+    margin-top: 2px;
+    width: 750px;
+    height: 80px;
+    border: 1px solid #B7B7B7;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0;
+    outline: none;
+    color: black;
+    padding: 8px;
+    box-sizing: border-box;
+    resize: vertical;
+}

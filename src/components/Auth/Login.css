@@ -1,0 +1,6 @@
+.login_main {
+    max-width: 480px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}

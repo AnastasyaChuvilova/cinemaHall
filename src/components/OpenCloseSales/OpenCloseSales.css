@@ -1,0 +1,26 @@
+.open_close_sales{
+    display: flex;
+    flex-direction: column;
+    gap: 29px;
+}
+
+.open_close_sales_label{
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0;
+    vertical-align: middle;
+}
+
+.open_close_sales_text{
+    display: flex;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 18px;
+    letter-spacing: 0;
+    vertical-align: middle;
+    align-items: center;
+    justify-content: center;
+}
+
