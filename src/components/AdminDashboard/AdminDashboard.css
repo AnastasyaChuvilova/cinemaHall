@@ -27,7 +27,7 @@
     cursor: pointer;
     min-width: 24px;
     height: 16px;
-    background: url("/arrow_down.png") no-repeat center;
+    background: url("../../arrow_down.png") no-repeat center;
     background-size: 24px 16px;
 }
 
