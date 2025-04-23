@@ -5,7 +5,7 @@ import {CommonButton} from "../CommonButton/CommonButton.tsx";
 import {HallListButtons} from "../HallListButtons/HallListButtons.tsx";
 import {Chair} from "../AdminDashboard/Chair.tsx";
 import "./HallConfigMain.css"
-import {BackendApi} from "../BackendApi.tsx";
+import {BackendApi} from "../../BackendApi.tsx";
 
 const seatOrder: SeatType[] = ["standart", "vip", "disabled"];
 
@@ -84,79 +84,79 @@ export const HallConfigMain = () => {
                 <div className={"hcm_halls_list_title"}>Выберите зал для конфигурации:</div>
                 <HallListButtons halls={halls} onSelectHall={handleSelectHall} selectedHall={selectedHall}/>
             </div>
-                <div className={"hall_config_inputs_box"}>
-                    <div className={"hcm_halls_list_title"}>Укажите количество рядов и максимальное количество кресел в
-                        ряду:
-                    </div>
-                    <form className={"hcm_size_inputs"}>
-                        <div>
-                            <div className={"hcm_size_inputs_title"}>Рядов, шт</div>
-                            <input
-                                className={"hcm_size_input"}
-                                type="number"
-                                min={1}
-                                max={10}
-                                value={rows}
-                                onChange={handleRowsChange}
-                            />
-                        </div>
-                        <div className={"hcm_size_input_x"}>X</div>
-                        <div>
-                            <div className={"hcm_size_inputs_title"}>Мест, шт</div>
-                            <input
-                                className={"hcm_size_input"}
-                                type="number"
-                                min={1}
-                                max={10}
-                                value={seats}
-                                onChange={handleSeatsChange}
-                            />
-                        </div>
-                    </form>
+            <div className={"hall_config_inputs_box"}>
+                <div className={"hcm_halls_list_title"}>Укажите количество рядов и максимальное количество кресел в
+                    ряду:
                 </div>
-                <div className={"hcm_hall_scheme_main"}>
-                    <div className={"hcm_hall_scheme_main_title"}>
-                        Теперь вы можете указать типы кресел на схеме зала:
+                <form className={"hcm_size_inputs"}>
+                    <div>
+                        <div className={"hcm_size_inputs_title"}>Рядов, шт</div>
+                        <input
+                            className={"hcm_size_input"}
+                            type="number"
+                            min={1}
+                            max={10}
+                            value={rows}
+                            onChange={handleRowsChange}
+                        />
                     </div>
-                    <div className={"hcm_hall_scheme_legend"}>
-                        <div className={"hcm_hall_scheme_legend_item"}>
-                            <Chair type={"standart"}/>
-                            <div className={"hcm_hall_scheme_chair_title"}>— обычные кресла</div>
-                        </div>
-                        <div className={"hcm_hall_scheme_legend_item"}>
-                            <Chair type={"vip"}/>
-                            <div className={"hcm_hall_scheme_chair_title"}>— vip кресла</div>
-                        </div>
-                        <div className={"hcm_hall_scheme_legend_item"}>
-                            <Chair type={"disabled"}/>
-                            <div className={"hcm_hall_scheme_chair_title"}>— заблокированные (нет кресла)</div>
-                        </div>
+                    <div className={"hcm_size_input_x"}>X</div>
+                    <div>
+                        <div className={"hcm_size_inputs_title"}>Мест, шт</div>
+                        <input
+                            className={"hcm_size_input"}
+                            type="number"
+                            min={1}
+                            max={10}
+                            value={seats}
+                            onChange={handleSeatsChange}
+                        />
                     </div>
-                    <div className={"hcm_hall_scheme_title"}>
-                        Чтобы изменить вид кресла, нажмите по нему левой кнопкой мыши
+                </form>
+            </div>
+            <div className={"hcm_hall_scheme_main"}>
+                <div className={"hcm_hall_scheme_main_title"}>
+                    Теперь вы можете указать типы кресел на схеме зала:
+                </div>
+                <div className={"hcm_hall_scheme_legend"}>
+                    <div className={"hcm_hall_scheme_legend_item"}>
+                        <Chair type={"standart"}/>
+                        <div className={"hcm_hall_scheme_chair_title"}>— обычные кресла</div>
                     </div>
-                    <div className={"hcm_hall_scheme"}>
-                        <div className={"hcm_hall_screen"}>ЭКРАН</div>
-                        <div className="hcm_hall_seats_main">
-                            {seatsGrid?.map((row, rowIndex) => (
-                                <div key={`row-${rowIndex}`} className="hcm_hall_seat_row">
-                                    {row.map((seat, seatIndex) =>
-                                        seat ? (
-                                            <button
-                                                key={`seat-${seatIndex}`}
-                                                className={`hcm_hall_scheme_chair chair--${seat}`}
-                                                onClick={() => handleSeatClick(rowIndex, seatIndex)}
-                                            />
-                                        ) : (
-                                            <div key={`gap-${seatIndex}`} className="hcm_hall_seat_gap"/>
-                                        )
-                                    )}
-                                </div>
-                            ))}
-                        </div>
+                    <div className={"hcm_hall_scheme_legend_item"}>
+                        <Chair type={"vip"}/>
+                        <div className={"hcm_hall_scheme_chair_title"}>— vip кресла</div>
                     </div>
+                    <div className={"hcm_hall_scheme_legend_item"}>
+                        <Chair type={"disabled"}/>
+                        <div className={"hcm_hall_scheme_chair_title"}>— заблокированные (нет кресла)</div>
+                    </div>
+                </div>
+                <div className={"hcm_hall_scheme_title"}>
+                    Чтобы изменить вид кресла, нажмите по нему левой кнопкой мыши
+                </div>
+                <div className={"hcm_hall_scheme"}>
+                    <div className={"hcm_hall_screen"}>ЭКРАН</div>
+                    <div className="hcm_hall_seats_main">
+                        {seatsGrid?.map((row, rowIndex) => (
+                            <div key={`row-${rowIndex}`} className="hcm_hall_seat_row">
+                                {row.map((seat, seatIndex) =>
+                                    seat ? (
+                                        <button
+                                            key={`seat-${seatIndex}`}
+                                            className={`hcm_hall_scheme_chair chair--${seat}`}
+                                            onClick={() => handleSeatClick(rowIndex, seatIndex)}
+                                        />
+                                    ) : (
+                                        <div key={`gap-${seatIndex}`} className="hcm_hall_seat_gap"/>
+                                    )
+                                )}
+                            </div>
+                        ))}
+                    </div>
+                </div>
 
-                </div>
+            </div>
             <div className={"common_buttons_box"}>
                 <CommonButton className={"button--cancel"} onClick={handleCancel} title={"Отмена"}/>
                 <CommonButton className={"button--save"} onClick={handleSaveHallConfig} title={"Сохранить"}/>

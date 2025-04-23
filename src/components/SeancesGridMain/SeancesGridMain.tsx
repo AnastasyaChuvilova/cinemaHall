@@ -4,7 +4,7 @@ import {AddFilmModal} from "../Modal/AddFilmModal/AddFilmModal.tsx";
 import "./SeancesGridMain.css"
 import {useCinemaContext} from "../../context/CinemaContext.tsx";
 import {Timeline} from "../Timeline/Timeline.tsx";
-import {BackendApi} from "../BackendApi.tsx";
+import {BackendApi} from "../../BackendApi.tsx";
 
 const filmColors = [
     '#CAFF85',
@@ -96,8 +96,8 @@ export const SeancesGridMain = () => {
                             alt={film.film_name}
                         />
                         <div className={"draggable_film_info"}>
-                            <div className={"text_500"}><p>{film.film_name}</p></div>
-                            <div className={"text_400"}><p>{film.film_duration} мин</p></div>
+                            <div className={"font_500"}><p>{film.film_name}</p></div>
+                            <div className={"font_400"}><p>{film.film_duration} мин</p></div>
                         </div>
                         <div className={"remove_button_box"}>
                             <button className={"film_remove_button"} onClick={() => handleDeleteFilm(film.id)}/>

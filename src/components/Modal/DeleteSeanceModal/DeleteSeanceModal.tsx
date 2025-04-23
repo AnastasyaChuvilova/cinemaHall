@@ -1,7 +1,7 @@
 import {CommonButton} from "../../CommonButton/CommonButton.tsx";
 import {useCinemaContext} from "../../../context/CinemaContext.tsx";
 import {SeanceData} from "../../../types.tsx";
-import {BackendApi} from "../../BackendApi.tsx";
+import {BackendApi} from "../../../BackendApi.tsx";
 
 interface DeleteSeanceModalProps {
     seance: SeanceData,

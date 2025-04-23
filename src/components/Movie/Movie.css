@@ -1,4 +1,4 @@
-.movie_section {
+.movie_main {
     background-color: #F1EBE6F2;
     max-width: 990px;
     min-width: 320px;
@@ -49,7 +49,7 @@
     gap: 8px;
 }
 
-.description_header {
+.movie_description_header {
     font-weight: 700;
     font-size: 16px;
 }
@@ -74,7 +74,7 @@
 
 }
 
-.seances_list {
+.movie_seances_list {
     display: flex;
     flex-direction: row;
     margin-top: 7px;
@@ -83,7 +83,7 @@
     margin-bottom: 20px;
 }
 
-.seances_item {
+.movie_seances_item {
     background: rgba(255, 255, 255, 1);
     box-shadow: 0 2px 2px 0 #0000003D;
     border-radius: 2px;
@@ -99,10 +99,12 @@
     font-family: "Roboto", sans-serif;
 }
 
-.seances_item_text {
-    height: 33px;
+.movie_seances_item.not_active {
+    background: #848484;
+    user-select: none;
+    pointer-events: none;
 }
 
-.seances_item:hover {
+.movie_seances_item:hover {
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }

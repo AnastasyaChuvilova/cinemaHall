@@ -4,7 +4,7 @@ import {useCinemaContext} from "../../context/CinemaContext.tsx";
 import {USER_PAGES} from "../../router.tsx";
 import {FilmData, HallData, SeanceData, Seat, SeatType} from "../../types.tsx";
 import {useEffect, useState} from "react";
-import {BackendApi} from "../BackendApi.tsx";
+import {BackendApi} from "../../BackendApi.tsx";
 import "./Seance.css"
 
 export const Seance = () => {
@@ -39,6 +39,7 @@ export const Seance = () => {
             setSelectedSeance(seance)
             setSeats(seatsForDate)
         }
+
         fetchData()
     }, []);
 

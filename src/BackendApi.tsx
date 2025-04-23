@@ -1,4 +1,4 @@
-import {SeatType, TicketRequest} from "../types.tsx";
+import {SeatType, TicketRequest} from "./types.tsx";
 
 export class BackendApi {
     private static instance: BackendApi;

@@ -4,7 +4,7 @@ import {useLocation, useNavigate} from "react-router-dom";
 import {BookingData, TicketRequest, TicketResponse} from "../../types.tsx";
 import {USER_PAGES} from "../../router.tsx";
 import {CommonButton} from "../CommonButton/CommonButton.tsx";
-import {BackendApi} from "../BackendApi.tsx";
+import {BackendApi} from "../../BackendApi.tsx";
 
 export const PaymentInfo = () => {
     const location = useLocation();

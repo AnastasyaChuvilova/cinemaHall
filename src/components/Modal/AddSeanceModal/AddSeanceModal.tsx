@@ -1,8 +1,8 @@
 import {CommonButton} from "../../CommonButton/CommonButton.tsx";
 import {useCinemaContext} from "../../../context/CinemaContext.tsx";
 import {FilmData, HallData} from "../../../types.tsx";
-import { useState} from "react";
-import {BackendApi} from "../../BackendApi.tsx";
+import {useState} from "react";
+import {BackendApi} from "../../../BackendApi.tsx";
 
 interface AddSeanceModalProps {
     currentHall: HallData;
@@ -10,7 +10,7 @@ interface AddSeanceModalProps {
     onOpen: (open: boolean) => void;
 }
 
-export const AddSeanceModal = ({currentHall, currentFilm,  onOpen}: AddSeanceModalProps) => {
+export const AddSeanceModal = ({currentHall, currentFilm, onOpen}: AddSeanceModalProps) => {
     const {halls, films, updateSeances} = useCinemaContext();
     const [selectedHall, setSelectedHall] = useState<HallData>(currentHall);
     const [selectedFilm, setSelectedFilm] = useState<FilmData>(currentFilm);

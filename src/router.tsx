@@ -1,5 +1,4 @@
-import {createHashRouter , Navigate, redirect} from "react-router-dom";
-import {UserHome} from "./components/Home/UserHome.tsx";
+import {createHashRouter, Navigate, redirect} from "react-router-dom";
 import {App} from "./App.tsx";
 import {Seance} from "./components/Booking/Seance.tsx";
 import {TicketInfo} from "./components/Order/TicketInfo.tsx";
@@ -11,6 +10,7 @@ import {UserPage} from "./components/UserPage.tsx";
 import {useAuth} from "./context/AuthContext.tsx";
 import {JSX} from "react";
 import {AdminDashboard} from "./components/AdminDashboard/AdminDashboard.tsx";
+import {Schedule} from "./components/Schedule/Schedule.tsx";
 
 export const USER_PAGES = {
     HOME: "/",
@@ -32,7 +32,7 @@ const ProtectedRoute = ({children}: { children: JSX.Element }) => {
 };
 
 
-export const router = createHashRouter ([
+export const router = createHashRouter([
     {
         path: USER_PAGES.HOME,
         element: <App/>,
@@ -42,7 +42,7 @@ export const router = createHashRouter ([
                 children: [
                     {
                         path: USER_PAGES.HOME,
-                        element: <UserHome/>
+                        element: <Schedule/>
                     },
                     {
                         path: USER_PAGES.SEANCE + "/:id",

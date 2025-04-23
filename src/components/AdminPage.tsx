@@ -3,9 +3,9 @@ import {AdminHeader} from "./AdminHeader/AdminHeader.tsx";
 
 export const AdminPage = () => {
     return (
-            <div className={"admin_content"}>
-                <AdminHeader/>
-                <Outlet/>
-            </div>
+        <div className={"page admin"}>
+            <AdminHeader/>
+            <Outlet/>
+        </div>
     );
 };

@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {useNavigate} from "react-router-dom";
 import {CommonButton} from "../CommonButton/CommonButton.tsx";
-import {BackendApi} from "../BackendApi.tsx";
+import {BackendApi} from "../../BackendApi.tsx";
 import {useAuth} from "../../context/AuthContext.tsx";
 import {ADMIN_PAGES} from "../../router.tsx";
 import "./Login.css"

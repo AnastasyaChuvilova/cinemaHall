@@ -17,35 +17,25 @@ export const TicketInfo = () => {
     useEffect(() => {
         if (!qrRef.current) return;
 
-        try {
-            const qrContent = ticketResponse.map(ticket => `
-            --------------------------------------------------------------------
+        const qrContent = ticketResponse.map(ticket => `
             ID: ${ticket.id}
-            Билет в кинотеатр
             Фильм: ${ticket.ticket_filmname}
             Зал: ${ticket.ticket_hallname}
             Дата: ${ticket.ticket_date}
             Время: ${ticket.ticket_time}
             Ряд: ${ticket.ticket_row}
             Место: ${ticket.ticket_place}
-            Стоимость: ${ticket.ticket_price} руб.
-            
-            Билет действителен строго на свой сеанс!`).join('\n\n');
+            Цена: ${ticket.ticket_price}
+            Билет действителен строго на свой сеанс!`).join('\n');
 
-            const qr = window.QRCreator(qrContent, {
-                modsize: 5,
-                margin: 2,
-                eccl: 3
-            });
+        const qr = window.QRCreator(qrContent);
 
-            qrRef.current.innerHTML = '';
+        qrRef.current.innerHTML = '';
 
-            if (qr.result) {
-                qrRef.current.appendChild(qr.result);
-            }
-
-        } catch (error) {
-            console.error('Ошибка генерации QR-кода:', error);
+        if (qr.error) {
+            console.error(`Ошибка генерации QR-кода: ${qr.error}: ${qr.errorSubcode}`,);
+        } else {
+            qrRef.current.appendChild(qr.result);
         }
     }, [bookingData, ticketResponse]);
 

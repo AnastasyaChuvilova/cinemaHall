@@ -5,7 +5,7 @@ import {Chair} from "../AdminDashboard/Chair.tsx";
 import {CommonButton} from "../CommonButton/CommonButton.tsx";
 import "./PriceConfigMain.css";
 import {HallData} from "../../types.tsx";
-import {BackendApi} from "../BackendApi.tsx";
+import {BackendApi} from "../../BackendApi.tsx";
 
 export const PriceConfigMain = () => {
     const {halls, updateHall} = useCinemaContext();

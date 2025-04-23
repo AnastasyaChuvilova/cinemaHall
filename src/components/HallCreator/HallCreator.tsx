@@ -3,7 +3,7 @@ import {useState} from "react";
 import {AddHallModal} from "../Modal/AddHallModal/AddHallModal.tsx";
 import {useCinemaContext} from "../../context/CinemaContext.tsx";
 import {CommonButton} from "../CommonButton/CommonButton.tsx";
-import {BackendApi} from "../BackendApi.tsx";
+import {BackendApi} from "../../BackendApi.tsx";
 
 export const HallCreator = () => {
     const {halls, updateHalls} = useCinemaContext();

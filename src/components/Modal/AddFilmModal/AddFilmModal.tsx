@@ -1,7 +1,7 @@
 import {useRef, useState} from "react";
 import {CommonButton} from "../../CommonButton/CommonButton.tsx";
 import {useCinemaContext} from "../../../context/CinemaContext.tsx";
-import {BackendApi} from "../../BackendApi.tsx";
+import {BackendApi} from "../../../BackendApi.tsx";
 import "./AddFilmModal.css";
 
 export const AddFilmModal = ({onClose}: { onClose: () => void }) => {

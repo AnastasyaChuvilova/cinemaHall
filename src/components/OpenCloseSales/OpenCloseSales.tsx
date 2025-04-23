@@ -4,7 +4,7 @@ import {useCinemaContext} from "../../context/CinemaContext.tsx";
 import {useState} from "react";
 import "./OpenCloseSales.css"
 import {HallData} from "../../types.tsx";
-import {BackendApi} from "../BackendApi.tsx";
+import {BackendApi} from "../../BackendApi.tsx";
 
 export const OpenCloseSales = () => {
     const {halls, updateHalls} = useCinemaContext();

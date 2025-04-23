@@ -5,7 +5,7 @@ import {DaysProvider} from "../context/DaysContext.tsx";
 export const UserPage = () => {
     return (
         <DaysProvider>
-            <div className={"user_content"}>
+            <div className={"page user"}>
                 <Header/>
                 <Outlet/>
             </div>

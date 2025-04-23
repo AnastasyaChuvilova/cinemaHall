@@ -17,7 +17,7 @@
     cursor: pointer;
 }
 
-.sing_in_button{
+.sing_in_button {
     width: 71px;
     height: 40px;
     padding: 12px;
@@ -35,5 +35,5 @@
     vertical-align: middle;
     text-transform: uppercase;
     margin-left: auto;
-    cursor:pointer;
+    cursor: pointer;
 }

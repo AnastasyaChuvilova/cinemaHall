@@ -15,6 +15,7 @@
 
 .user_main {
     flex-direction: column;
+    max-width: 990px;
     min-width: 320px;
     width: 100%;
 }
@@ -52,7 +53,6 @@
     margin-top: 8px;
 }
 
-
 .navigation_weekend {
     color: #ff0000;
 }
@@ -83,16 +83,19 @@
     }
 
 }
+
 @media (max-width: 452px) {
     .navigation_day_today {
         margin-left: -8px;
 
     }
 }
+
 @media (max-width: 389px) {
     .navigation_day {
         font-size: 10px;
     }
+
     .navigation_day--active {
         font-size: 13px;
     }

@@ -13,9 +13,11 @@ export const Header = () => {
     return (
         <div className="user_header">
             <div className="user_header_title" onClick={() => navigator(USER_PAGES.HOME)}>
-                ИДЁМ<span className="light">В</span>КИНО
+                ИДЁМ<span className="font_100">В</span>КИНО
             </div>
-            <button onClick={handleClick} className={"sing_in_button"} hidden={location.pathname != USER_PAGES.HOME}>Войти</button>
+            <button onClick={handleClick} className={"sing_in_button"}
+                    hidden={location.pathname != USER_PAGES.HOME}>Войти
+            </button>
         </div>
     )
 }

@@ -1,6 +1,6 @@
 import React, {createContext, useContext, useEffect, useState} from 'react';
 import {FilmData, HallData, SeanceData} from "../types.tsx";
-import {BackendApi} from "../components/BackendApi.tsx";
+import {BackendApi} from "../BackendApi.tsx";
 
 type CinemaContextType = {
     halls: HallData[];

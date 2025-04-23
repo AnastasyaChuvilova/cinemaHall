@@ -16,37 +16,21 @@ html, body {
     padding: 0;
 }
 
-.user_content {
+.page {
     display: flex;
-    overflow: auto;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
+}
+
+.page.user {
     background: url('/background_user.jpg') no-repeat center center fixed;
     background-size: cover;
-    width: 100%;
-    overflow-x: hidden;
 }
 
-.admin_content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
+.page.admin {
     background: url('/background_admin.jpg') no-repeat center center fixed;
     background-size: cover;
-}
-
-.content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    min-height: 100vh;
-
-}
-
-.light {
-    font-weight: 100;
 }
 
 .loading,
@@ -124,11 +108,15 @@ html, body {
     vertical-align: middle;
 }
 
-.text_400 {
+.font_100 {
+    font-weight: 100;
+}
+
+.font_400 {
     font-weight: 400;
 }
 
-.text_500 {
+.font_500 {
     font-weight: 500;
 }
 
@@ -248,7 +236,7 @@ html, body {
     margin-top: 20px;
 }
 
-.not_found{
+.not_found {
     width: 100%;
     height: 250px;
     display: flex;

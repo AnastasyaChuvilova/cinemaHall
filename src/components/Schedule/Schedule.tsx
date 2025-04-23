@@ -1,7 +1,7 @@
 import {useState} from "react";
 import {useDaysContext} from "../../context/DaysContext.tsx";
 import {useCinemaContext} from "../../context/CinemaContext.tsx";
-import {MovieSection} from "../Home/MovieSection.tsx";
+import {Movie} from "../Movie/Movie.tsx";
 import {FilmData, SeanceData} from "../../types.tsx";
 import "./Schedule.css"
 
@@ -15,31 +15,14 @@ export const Schedule = () => {
     const [selectedDay, setSelectedDay] = useState<Date>(new Date());
     const {halls, films, seances} = useCinemaContext()
     const daysOfMonth = useDaysContext()
+
     const handleDayClick = (index: number, date: Date) => {
         setSelectedDayIndex(index);
         setSelectedDay(date)
     };
 
-    function timeStringToToday(timeString: string) {
-        const now = new Date();
-        const [hours, minutes] = timeString.split(':').map(Number);
-        now.setHours(hours);
-        now.setMinutes(minutes);
-        return now;
-    }
-
-    const getSeances = (filmId: number, selectedDay?: number | null) => {
-        if (selectedDay == null) {
-            return []
-        }
-        const date = daysOfMonth[selectedDay];
-
-        let filtered = seances.filter((seance: SeanceData) => seance.seance_filmid === filmId);
-        if (date.isToday) {
-            const today = new Date();
-            filtered = filtered.filter((seance: SeanceData) => timeStringToToday(seance.seance_time).getTime() > today.getTime());
-        }
-        return filtered;
+    const getFilmSeances = (filmId: number) => {
+        return seances.filter((seance: SeanceData) => seance.seance_filmid === filmId);
     }
 
     const [currentSlice, setCurrentSlice] = useState<Slice>({start: 0, end: 6});
@@ -75,7 +58,8 @@ export const Schedule = () => {
                                                                               }, index) => (
                     index === 0 && !isToday
                         ?
-                        <div key={index} className={`navigation_arrow`} onClick={() => clickPrev(currentSlice)}>{'<'}</div>
+                        <div key={index} className={`navigation_arrow`}
+                             onClick={() => clickPrev(currentSlice)}>{'<'}</div>
                         :
                         <div
                             key={index}
@@ -100,12 +84,12 @@ export const Schedule = () => {
                 films.filter(film =>
                     seances.some(seance => seance.seance_filmid === film.id))
                     .map((film: FilmData) => (
-                        <MovieSection
+                        <Movie
                             key={film.id}
                             date={selectedDay}
                             film={film}
                             halls={halls.filter(hall => hall.hall_open)}
-                            seances={getSeances(film.id, selectedDayIndex)}
+                            seances={getFilmSeances(film.id)}
                         />
                     ))
             }
