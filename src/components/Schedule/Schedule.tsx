@@ -82,7 +82,16 @@ export const Schedule = () => {
             </div>
             {
                 films.filter(film =>
-                    seances.some(seance => seance.seance_filmid === film.id))
+                    seances.sort((a, b) => {
+                        const [aHours, aMinutes] = a.seance_time.split(':').map(Number);
+                        const [bHours, bMinutes] = b.seance_time.split(':').map(Number);
+
+                        const aTotalMinutes = aHours * 60 + aMinutes;
+                        const bTotalMinutes = bHours * 60 + bMinutes;
+
+                        return aTotalMinutes - bTotalMinutes;
+                    })
+                        .some(seance => seance.seance_filmid === film.id))
                     .map((film: FilmData) => (
                         <Movie
                             key={film.id}

@@ -14,7 +14,7 @@
     text-align: center;
     border: none;
     border-radius: 3px;
-    background: #ffffff;
+    background: rgba(255, 255, 255, 1);
     font-weight: 500;
     font-size: 14px;
     letter-spacing: 0;
@@ -26,7 +26,6 @@
 .halls_list_button--active {
     width: 90px;
     height: 46px;
-    font-weight: 900;
     font-size: 15px;
     box-shadow: 0 6px 8px 0 #0000003d;
     line-height: 16px;

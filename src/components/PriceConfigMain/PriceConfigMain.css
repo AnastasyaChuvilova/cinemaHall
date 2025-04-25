@@ -1,10 +1,10 @@
-.price_config_main{
+.price_config_main {
     display: flex;
     flex-direction: column;
     gap: 12px;
 }
 
-.price_config_label{
+.price_config_label {
     font-weight: 400;
     font-size: 16px;
     line-height: 18px;
@@ -23,7 +23,7 @@
     flex-direction: column;
 }
 
-.pcm_set_price_row{
+.pcm_set_price_row {
     display: flex;
     flex-direction: row;
     text-align: center;
@@ -37,7 +37,7 @@
     height: 36px;
     outline: none;
     box-sizing: border-box;
-    background: #FFFFFF;
+    background: rgba(255, 255, 255, 1);
     border: 1px solid #B7B7B7;
     cursor: pointer;
     font-weight: 400;
@@ -55,7 +55,7 @@
     margin: 0;
 }
 
-.pcm_legend_description_text{
+.pcm_legend_description_text {
     font-weight: 400;
     font-size: 14px;
     line-height: 16px;

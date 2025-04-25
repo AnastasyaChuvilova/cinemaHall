@@ -7,8 +7,8 @@
     padding-top: 17px;
     padding-left: 42px;
     padding-bottom: 15px;
-    background: #63536C;
-    color: #FFFFFF;
+    background: rgba(99, 83, 108, 1);
+    color: rgba(255, 255, 255, 1);
     font-weight: 700;
     font-size: 22px;
     line-height: 25px;
@@ -20,7 +20,7 @@
 .hall_create_body {
     height: 203px;
     width: 960px;
-    background: #EAE9EBF2;
+    background: rgba(234, 233, 235, 0.95);
     display: flex;
     flex-direction: column;
     padding-left: 105px;
@@ -39,9 +39,9 @@
     width: 194px;
     height: 40px;
     border: none;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 1);
     border-radius: 3px;
-    background: #16A6AF;
+    background: rgba(22, 166, 175, 1);
     box-shadow: 0 3px 3px 0 #0000003D;
     font-weight: 500;
     font-size: 14px;
@@ -59,9 +59,9 @@
     width: 139px;
     height: 40px;
     border: none;
-    color: #63536C;
+    color: rgba(99, 83, 108, 1);
     border-radius: 3px;
-    background: #FFFFFF;
+    background: rgba(255, 255, 255, 1);
     box-shadow: 0 3px 3px 0 #0000003D;
     font-weight: 500;
     font-size: 14px;

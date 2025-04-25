@@ -57,7 +57,7 @@ export const CinemaHall = ({seats, prices, onSeatSelect}: CinemaHallProps) => {
                 <div>
                     <div className="cinema_hall_col col1">
                         <div className="cinema_hall_legend_price">
-                            <div className="cinema_hall_legend_chair" style={{background: "#ffffff"}}></div>
+                            <div className="cinema_hall_legend_chair" style={{background: "rgba(255, 255, 255, 1)"}}></div>
                             <div className="tiny_text white no_wrap">Свободно ({prices.standart}руб)</div>
                         </div>
                         <div className="cinema_hall_legend_price">

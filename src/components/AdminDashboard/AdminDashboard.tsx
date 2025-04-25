@@ -8,7 +8,7 @@ import {OpenCloseSales} from "../OpenCloseSales/OpenCloseSales.tsx";
 
 export const AdminDashboard = () => {
     return (
-        <div className={"admin_main"}>
+        <div className={"admin_dashboard_main"}>
             <AdminItem title={"Управление залами"} first={true} content={<HallCreator/>}/>
             <AdminItem title={"Конфигурация залов"} content={<HallConfigMain/>}/>
             <AdminItem title={"Конфигурация цен"} content={<PriceConfigMain/>}/>

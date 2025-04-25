@@ -10,13 +10,12 @@
 }
 
 .admin_header_title {
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 1);
     cursor: pointer;
     margin-left: 100px;
 }
 .admin_header_font {
     font-size: 34px;
-    font-weight: 900;
 }
 
 .admin_header_sub_title{

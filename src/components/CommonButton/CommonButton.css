@@ -17,14 +17,14 @@
 
 .common_button.button--save {
     height: 40px;
-    background: #16A6AF;
-    color: #FFFFFF;
+    background: rgba(22, 166, 175, 1);
+    color: rgba(255, 255, 255, 1);
 }
 
 .common_button.button--cancel {
     height: 40px;
-    background: #FFFFFF;
-    color: #63536C;
+    background: rgba(255, 255, 255, 1);
+    color: rgba(99, 83, 108, 1);
 }
 
 .button--pressed {

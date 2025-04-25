@@ -1,5 +1,5 @@
 .movie_main {
-    background-color: #F1EBE6F2;
+    background-color: rgba(241, 235, 230, 0.95);
     max-width: 990px;
     min-width: 320px;
     width: 100%;
@@ -100,9 +100,11 @@
 }
 
 .movie_seances_item.not_active {
-    background: #848484;
+    background: #B7B7B7;
     user-select: none;
     pointer-events: none;
+    box-shadow: 0 1px 1px 0 #0000003D;
+    color: rgba(132, 132, 132, 1);
 }
 
 .movie_seances_item:hover {

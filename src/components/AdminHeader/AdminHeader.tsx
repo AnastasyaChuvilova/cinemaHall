@@ -7,7 +7,7 @@ export const AdminHeader = () => {
 
     return (
         <div className="admin_header">
-            <div className="admin_header_title admin_header_font" onClick={() => navigator(USER_PAGES.HOME)}>
+            <div className="admin_header_title admin_header_font font_900" onClick={() => navigator(USER_PAGES.HOME)}>
                 ИДЁМ<span className="font_100">В</span>КИНО
                 <div className="admin_header_sub_title">Администраторррская</div>
             </div>

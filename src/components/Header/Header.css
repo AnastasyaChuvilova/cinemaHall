@@ -11,8 +11,7 @@
 .user_header_title {
     width: 215px;
     font-size: 34px;
-    font-weight: 900;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 1);
     line-height: 39px;
     cursor: pointer;
 }
@@ -23,9 +22,9 @@
     padding: 12px;
     border-radius: 3px;
     border: none;
-    background: #16A6AF;
+    background: rgba(22, 166, 175, 1);
     box-shadow: 0 3px 3px 0 #0000003D;
-    color: #FFFFFF;
+    color: rgba(255, 255, 255, 1);
     font-weight: 500;
     font-size: 14px;
     line-height: 16px;

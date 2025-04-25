@@ -17,7 +17,7 @@ export const AdminItem = ({title, first, last, content}: AdminItemProps) => {
 
     return (
         <div>
-            <div className={"header_main"} onClick={toggleBody}>
+            <div className={"admin_item_header common_text font_700"} onClick={toggleBody}>
                 {!first ?
                     <div className={"admin_header_line_top"}/>
                     :
@@ -29,7 +29,7 @@ export const AdminItem = ({title, first, last, content}: AdminItemProps) => {
                     :
                     <></>
                 }
-                <div className="header_title">{title}</div>
+                <div className="admin_item_header_title">{title}</div>
                 <div className={"down_arrow"} />
             </div>
             {isOpen && (

@@ -12,7 +12,7 @@ export const Header = () => {
 
     return (
         <div className="user_header">
-            <div className="user_header_title" onClick={() => navigator(USER_PAGES.HOME)}>
+            <div className="user_header_title font_900" onClick={() => navigator(USER_PAGES.HOME)}>
                 ИДЁМ<span className="font_100">В</span>КИНО
             </div>
             <button onClick={handleClick} className={"sing_in_button"}

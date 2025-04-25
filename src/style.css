@@ -33,46 +33,6 @@ html, body {
     background-size: cover;
 }
 
-.loading,
-.error {
-    text-align: center;
-    padding: 50px;
-    font-size: 18px;
-    color: #fff;
-    background: rgba(0, 0, 0, 0.7);
-}
-
-.header__content {
-    max-width: 990px;
-    margin: 0 auto;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 14px;
-}
-
-.header__logo {
-    color: #fff;
-    font-size: 34px;
-    margin: 0;
-}
-
-.header__login-button {
-    background: #16a6af;
-    color: white;
-    padding: 12px 24px;
-    border: none;
-    border-radius: 3px;
-    font-size: 14px;
-    cursor: pointer;
-    box-shadow: 0 3px 3px rgba(0, 0, 0, 0.24);
-    transition: background 0.3s ease;
-}
-
-.header__login-button:hover {
-    background: #128a92;
-}
-
 .bolder {
     font-weight: bold;
 }
@@ -108,8 +68,17 @@ html, body {
     vertical-align: middle;
 }
 
+.common_text {
+    letter-spacing: 0;
+    vertical-align: middle;
+}
+
 .font_100 {
     font-weight: 100;
+}
+
+.font_300 {
+    font-weight: 300;
 }
 
 .font_400 {
@@ -118,6 +87,14 @@ html, body {
 
 .font_500 {
     font-weight: 500;
+}
+
+.font_700 {
+    font-weight: 700;
+}
+
+.font_900 {
+    font-weight: 900;
 }
 
 .modal-overlay {
@@ -143,8 +120,8 @@ html, body {
     height: 57px;
     box-sizing: border-box;
     padding: 17px 42px 15px;
-    background: #63536C;
-    color: #FFFFFF;
+    background: rgba(99, 83, 108, 1);
+    color: rgba(255, 255, 255, 1);
     font-weight: 700;
     font-size: 22px;
     line-height: 25px;
@@ -170,7 +147,7 @@ html, body {
     max-width: 960px;
     min-width: 320px;
     width: 100%;
-    background-color: #EAE9EBF2;
+    background-color: rgba(234, 233, 235, 0.95);
     padding: 30px 9px 20px;
     box-sizing: border-box;
 }

@@ -8,14 +8,17 @@ import {BackendApi} from "../../BackendApi.tsx";
 
 export const OpenCloseSales = () => {
     const {halls, updateHalls} = useCinemaContext();
-    const [selectedHall, setSelectedHall] = useState<HallData | undefined>(halls[0]);
-    const [isSelectedHallOpen, setIsSelectedHallOpen] = useState<boolean | undefined>(false);
+    const [selectedHall, setSelectedHall] = useState<HallData>(halls[0]);
+    const [isSelectedHallOpen, setIsSelectedHallOpen] = useState<boolean>(halls[0].hall_open);
     const backendApi = BackendApi.getInstance();
 
     const handleSelectHall = (hallId: number) => {
         const hall = halls.find(hall => hall.id === hallId)
-        setSelectedHall(hall);
-        setIsSelectedHallOpen(hall?.hall_open)
+
+        if(hall) {
+            setSelectedHall(hall);
+            setIsSelectedHallOpen(hall.hall_open)
+        }
     }
 
     const handleOpenCloseHall = async (open: number) => {

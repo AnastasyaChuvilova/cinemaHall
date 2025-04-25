@@ -18,7 +18,7 @@ export const HallListButtons = ({
                 <button
                     key={hall.id}
                     className={`halls_list_button ${
-                        hall.id === selectedHall?.id ? "halls_list_button--active" : ""
+                        hall.id === selectedHall?.id ? "halls_list_button--active font_900" : ""
                     }`}
                     onClick={() => onSelectHall(hall.id)}
                 >
