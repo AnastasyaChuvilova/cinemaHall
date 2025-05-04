@@ -96,7 +96,7 @@
     font-size: 24px;
     transition: all 0.3s ease;
     cursor: pointer;
-    background: url("../../basket.svg") no-repeat center center;
+    background: url("/basket.svg") no-repeat center center;
     background-size: contain;
 }
 

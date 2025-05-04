@@ -61,7 +61,7 @@ export const PriceConfigMain = () => {
     };
 
     const handleInputChange = (type: 'standart' | 'vip', value: string) => {
-        setInputValues(prev => ({...prev, [type]: value}));
+        setInputValues(prev => ({...prev, [type]: Math.max(0, Number(value))}));
     };
 
     const handleInputBlur = (type: 'standart' | 'vip') => {

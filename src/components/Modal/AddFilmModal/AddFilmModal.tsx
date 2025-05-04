@@ -41,8 +41,8 @@ export const AddFilmModal = ({onClose}: { onClose: () => void }) => {
         if (filmName === "") {
             setError("Укажите название фильма");
             return
-        } else if (filmDuration === 0) {
-            setError("Укажите продолжительность фильма");
+        } else if (filmDuration <= 0) {
+            setError("Некорректная продолжительность фильма");
             return
         } else if (filmDescription === "") {
             setError("Укажите описание фильма");
